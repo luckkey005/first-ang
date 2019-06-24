@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+                Enter currency amount <input type="number" name="amount" class="p-2" [(ngModel)]="cur" > 
+        </div>
+        <div class="col-md-6">
+                <input type="checkbox" name="colorValue" [(ngModel)]="isSelected"> Tick 4 White
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped" >
+<tr *ngFor="let l of ls" [style.backgroundColor]="isSelected ?'white' : 'teal'" [style.color]="!isSelected ?'white' : 'teal'">
+    <td>{{l}}</td>
+</tr>
+</table>
+
+<p [innerHTML]=" cur | number:'3.2-3' | currency"></p>

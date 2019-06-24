@@ -1,0 +1,6 @@
+Users of GitHub
+<ul *ngFor="let user of users">
+  <li>Name :{{user.login}}</li>
+  <li>Image :<img src={{user.avatar_url}} width="150px" height="150px" alt={{user.login}}></li>
+  <!-- <li>{{user | json}}</li> -->
+</ul>

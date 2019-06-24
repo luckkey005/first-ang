@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <form class="form">
+      <input type="text" name="some" (keyup)="disp()" id="sm" class="form-element">
+      <input type="button" value="Store" (click)="updating()" class="form-element btn btn-info btn-sm">
+    
+    </form>
+  </div>
+  <div class="row">
+    <table class="table table-bordered">
+      <thead>
+        <th>Temp value</th>
+        <th>Stored value</th>
+      </thead>
+      <tr>
+        <td>{{val}}</td>
+        <td id="store"></td>
+      </tr>
+    </table>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <h3 class="text-center text-info">These details are taken from array which is placed in service</h3>
+  
+  <div *ngIf="a.length >0 then iftrue else iffalse"></div>
+ <ng-template #iftrue>
+   <h2>List of Color Values</h2>
+    <table class="table table-striped table-responsive">
+        <thead>
+          <th>Name</th>
+          <th>Value</th>
+        </thead>
+        <tr *ngFor="let post of a" >
+          <td>{{post.name}}</td>
+          <td>{{post.value}}</td>
+        </tr>
+      </table>
+ </ng-template>
+
+ <ng-template #iffalse>
+<h2>No Color Values Found</h2>
+  </ng-template>
+ 
+    
+</div>
+    
+
