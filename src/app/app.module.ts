@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -13,6 +12,7 @@ import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { SuperComponent } from './super/super.component';
 import { ContactComponent } from './contact/contact.component';
+import { PostsComponent } from './posts/posts.component';
 
 const R:Routes=[{path:'first',component:FirstComponent},
               {path:'second',component:SecondComponent},
@@ -20,6 +20,7 @@ const R:Routes=[{path:'first',component:FirstComponent},
               {path:'fourth',component:FourthComponent},
               {path:'super',component:SuperComponent},
               {path:'contact',component:ContactComponent},
+              {path:'posts',component:PostsComponent},
             ];
 
 @NgModule({
@@ -30,7 +31,8 @@ const R:Routes=[{path:'first',component:FirstComponent},
     ThirdComponent,
     FourthComponent,
     SuperComponent,
-    ContactComponent
+    ContactComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
