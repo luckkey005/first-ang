@@ -1,4 +1,5 @@
 <div class="container-fluid">
+        <h2>Enter amount in input & untick to change color</h2>
     <div class="row">
         <div class="col-md-6">
                 Enter currency amount <input type="number" name="amount" class="p-2" [(ngModel)]="cur" > 
@@ -10,9 +11,8 @@
 </div>
 
 <table class="table table-striped" >
-<tr *ngFor="let l of ls" [style.backgroundColor]="isSelected ?'white' : 'teal'" [style.color]="!isSelected ?'white' : 'teal'">
-    <td>{{l}}</td>
-</tr>
-</table>
-
-<p [innerHTML]=" cur | number:'3.2-3' | currency"></p>
+        <tr *ngFor="let l of ls" [style.backgroundColor]="isSelected ?'white' : 'teal'" [style.color]="!isSelected ?'white' : 'teal'">
+            <td>{{l}}</td>
+        </tr>
+        </table>
+<p [innerHTML]=" cur | number:'3.2-3' | currency"> Currency :</p>
