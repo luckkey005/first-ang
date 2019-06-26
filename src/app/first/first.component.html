@@ -1,6 +1,9 @@
 <h2 id="pretext" class="text-center">Wait while loading users list from github</h2>
-<ul *ngFor="let user of users">
-  <li>Name :{{user.login}}</li>
-  <li>Image :<img src={{user.avatar_url}} width="150px" height="150px" alt={{user.login}}></li>
-  <!-- <li>{{user | json}}</li> -->
-</ul>
+
+<div class="row" >
+  <div class="col text-center" *ngFor="let user of users">
+        <img src={{user.avatar_url}} width="150px" height="150px" alt={{user.login}}>
+        <p>Name: {{user.login}}<br>Profile <a href="{{user.html_url}}">Here</a></p>   
+  </div>
+
+</div>
