@@ -12,7 +12,7 @@
     color: #000;
 }
 .aboutus-title::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: #008080 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -40,7 +40,7 @@ a:hover, a:active {
     width: 18%;
 }
 .feature .feature-box .iconset::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: #008080 none repeat scroll 0 0;
     content: "";
     height: 150%;
     left: 43%;
@@ -79,9 +79,9 @@ a:hover, a:active {
     color : #f4b841;
     padding:0px;
     font-size:40px;
-    border: 1px solid #fdb801;
+    border: 1px solid #008080;
     border-radius: 100px;
-    color: #fdb801;
+    color: #008080;
     font-size: 28px;
     height: 70px;
     line-height: 70px;
@@ -91,8 +91,8 @@ a:hover, a:active {
 
 span.fa.fa-gear {
     margin-left: 3%;
-    color: orange;
-    border: 1px solid orange;
+    color: #008080;
+    border: 1px solid #008080;
     padding: 25%;
     border-radius: 50%;
     font-size: 1.5rem;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik:500,700|Roboto:400,600");
+
 .section-padding {
     padding: 45px 0;
 }
@@ -562,3 +562,4 @@ select.form-control[multiple] {
     font-weight: 500;
     height: auto
 }
+a{color:#008080;}
