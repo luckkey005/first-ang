@@ -1,36 +1,20 @@
-.aboutus-section {
-    padding: 90px 0;
-}
+
 .aboutus-title {
-    font-size: 30px;
+    font-size: 2rem;
     letter-spacing: 0;
     line-height: 32px;
-    margin: 0 0 39px;
+    margin-bottom: 10%;
     padding: 0 0 11px;
     position: relative;
     text-transform: uppercase;
     color: #000;
 }
-.aboutus-title::after {
-    background: #008080 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 54px;
-}
-.aboutus-text {
-    color: #606060;
-    font-size: 13px;
-    line-height: 22px;
-    margin: 0 0 35px;
-}
 
-a:hover, a:active {
-    color: #ffb901;
-    text-decoration: none;
-    outline: 0;
+.aboutus-text {
+    color: #303030;
+    font-size: 0.95rem;
+    line-height: 22px;
+    text-align: justify;
 }
 
 .feature .feature-box .iconset {
@@ -65,35 +49,23 @@ a:hover, a:active {
 }
 .feature .feature-box .feature-content h4 {
     color: #0f0f0f;
-    font-size: 18px;
+    font-size: 1.2rem;
     letter-spacing: 0;
     line-height: 22px;
     margin: 0 0 5px;
 }
 .feature .feature-box .feature-content p {
-    color: #606060;
-    font-size: 13px;
+    color: #303030;
+    font-size: .95rem;
     line-height: 22px;
-}
-.icon {
-    color : #f4b841;
-    padding:0px;
-    font-size:40px;
-    border: 1px solid #008080;
-    border-radius: 100px;
-    color: #008080;
-    font-size: 28px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    width: 70px;
+    text-align: justify;
 }
 
 span.fa.fa-gear {
-    margin-left: 3%;
+    margin-left: 15%;
     color: #008080;
     border: 1px solid #008080;
-    padding: 25%;
+    padding: 13%;
     border-radius: 50%;
     font-size: 1.5rem;
 }

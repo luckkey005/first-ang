@@ -1,11 +1,4 @@
 
-.section-padding {
-    padding: 45px 0;
-}
-.section-dark {
-    background-color: #f9f9f9;
-    z-index: -2;
-}
 .form-control,
 .form-group .form-control {
     border: 0;
