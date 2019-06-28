@@ -14,6 +14,7 @@ import { FourthComponent } from './fourth/fourth.component';
 import { SuperComponent } from './super/super.component';
 import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
+import { PrintComponent } from './print/print.component';
 
 const R:Routes=[{path:'first',component:FirstComponent},
                 {path:'',component:FourthComponent},
@@ -23,6 +24,7 @@ const R:Routes=[{path:'first',component:FirstComponent},
               {path:'super',component:SuperComponent},
               {path:'contact',component:ContactComponent},
               {path:'posts',component:PostsComponent},
+              {path:'print',component:PrintComponent},
             ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const R:Routes=[{path:'first',component:FirstComponent},
     FourthComponent,
     SuperComponent,
     ContactComponent,
-    PostsComponent
+    PostsComponent,
+    PrintComponent
   ],
   imports: [
     BrowserModule,

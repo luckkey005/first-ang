@@ -69,3 +69,9 @@ span.fa.fa-gear {
     border-radius: 50%;
     font-size: 1.5rem;
 }
+
+.photo {
+    padding: 3%;
+    padding-bottom: 8%;
+    text-align: center;
+}
