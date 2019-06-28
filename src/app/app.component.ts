@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular'; 
-  navbarCollapsed = true;
-
+  navbarCollapsed = true;  
 toggleNavbarCollapsing() {
     this.navbarCollapsed = !this.navbarCollapsed;
 }
+
+collapse(){  this.navbarCollapsed=true;  }
 }
  

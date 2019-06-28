@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
 
 const R:Routes=[{path:'first',component:FirstComponent},
+                {path:'',component:FourthComponent},
               {path:'second',component:SecondComponent},
               {path:'third',component:ThirdComponent},
               {path:'fourth',component:FourthComponent},
