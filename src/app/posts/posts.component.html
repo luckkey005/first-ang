@@ -3,26 +3,11 @@
 		<div class="col-md-8 offset-md-2">
 				
 			<ul class="timeline">
-				<li>
-					<a target="_blank" href="http://www.rvrjcce.ac.in/">Post Graduation - MCA</a>
-					<p class="float-right"> 2014 - 2017 </p>
-					<p>Completed My Post Graduation in Master of Computer Applications in RVR & JC College of Engineering under Acharya Nagarjuna University by scoring 76% of marks on 2017.</p>
-				</li>
-				<li>
-					<a target="_blank" href="https://hcg.ac.in/">Graduation - B.Sc</a>
-					<p class="float-right"> 2009 - 2012 </p>
-					<p>Completed My Graduation in Bachelor of Science in Hindu College under Acharya Nagarjuna University by scoring 64.5%% of marks on 2012.</p>
-				</li>
-				<li>
-					<a target="_blank" href="http://www.andhramuslimcollege.org/">Intermediate - MPC</a>
-					<p class="float-right"> 2007 - 2009 </p>
-					<p>Completed My Intermediate in M.P.C in Andhra Muslim college under Board of Intermediate Education of AP by scoring 71.3% of marks on 2009.</p>
-				</li>
-				<li>
-					<a target="_blank" >Higher Education - SSC</a>
-					<p class="float-right"> 2006 - 2007 </p>
-					<p>Completed My Higher Education in Vijaya Lakshmi Public School under AP Board of Secondary Education by scoring 79.6% of marks on 2007.</p>
-				</li>
+				<li *ngFor="let n of a.education">
+					<a target="_blank" href="{{n.website}}">{{n.title}} - {{n.course}}</a>
+					<p class="float-right"> {{n.syear}} - {{n.eyear}} </p>
+					<p>{{n.desc}}</p>
+				</li>				
 			</ul>
 		</div>
 	</div>

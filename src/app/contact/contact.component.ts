@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorsService } from '../colors.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  a:any;
 
-  constructor() { }
+  constructor(data:ColorsService) { this.a=data.getData(); }
 
   ngOnInit() {
   }

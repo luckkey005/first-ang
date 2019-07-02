@@ -9,7 +9,7 @@ import { ColorsService } from 'src/app/colors.service';
 })
 export class FourthComponent implements OnInit {
  a:any;
-  constructor(private _ColorService:ColorsService) {  }
+  constructor(private _ColorService:ColorsService) { }
 
   ngOnInit() {
   this.a= this._ColorService.getData();

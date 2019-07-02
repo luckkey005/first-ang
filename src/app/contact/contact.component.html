@@ -7,20 +7,20 @@
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Chance of response is low. so <b class="font-italic">I appreciate for visiting my site.</b></p>
 
             <div class="find-widget">
-              Address: <a >Ramanamakshetram 3rd line, Guntur</a>
+              Address: <a >{{a.contact.address}}</a>
             </div>
             <div class="find-widget">
-              Facebook:  <a target="_blank" href="https://www.facebook.com/deepak.lakshmi.39"> Lakshmi Deepak </a>
+              Facebook:  <a target="_blank" href="{{a.contact.social1}}"> {{a.name}} </a>
             </div>
             <div class="find-widget">
-              Email:  <a href="mailto:luckkey005@gmail.com">luckkey005@gmail.com</a>
+              Email:  <a href="mailto:{{a.contact.mail}}">{{a.contact.mail}}</a>
             </div>
             
             <div class="find-widget">
-              Website:  <a target="_blank" href="https://luckkey005.github.io/first-ang/">GitHub Pages</a>
+              Website:  <a target="_blank" href="{{a.contact.website}}">GitHub Pages</a>
             </div>
             <div class="find-widget">
-               Contact Timings: <a href="#">Mon to Sat: 09:30 AM - 09.30 PM</a>
+               Contact Timings: <a >{{a.contact.timing}}</a>
             </div>
           </div>
           <!-- contact form -->

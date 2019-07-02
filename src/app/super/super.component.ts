@@ -1,4 +1,5 @@
-import { Component, OnInit ,Input , Output, EventEmitter} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ColorsService } from '../colors.service';
 
 @Component({
   selector: 'app-super',
@@ -6,15 +7,10 @@ import { Component, OnInit ,Input , Output, EventEmitter} from '@angular/core';
   styleUrls: ['./super.component.css']
 })
 export class SuperComponent implements OnInit {
-  @Output() change= new EventEmitter();
-  @Input() isFavorite :boolean=true;
-  
-  constructor() { }
+  a:any;
+  constructor(private _Colorservice :ColorsService) {this.a=_Colorservice.getData(); }
 
   ngOnInit() {
   }
-  onFavoriteChanged(){
-    this.change.emit();
-  }  
-
+  
 }

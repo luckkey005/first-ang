@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorsService } from '../colors.service';
 
 @Component({
   selector: 'app-second',
@@ -6,17 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
-  val:string='';
-  constructor() { }
+ a:any;
+  constructor(private _Colorservice :ColorsService) {this.a=_Colorservice.getData(); }
 
-  updating(){
-    document.getElementById('store').innerHTML= document.getElementById('store').innerHTML+'<br>'+this.val;
-    (<HTMLInputElement>document.getElementById('sm')).value='';this.val='';
-  }
-  disp(){
-    this.val=(<HTMLInputElement>document.getElementById('sm')).value;
-  }
-  ngOnInit() {
+   ngOnInit() {
   }
 
 }
