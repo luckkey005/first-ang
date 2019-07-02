@@ -15,6 +15,7 @@ import { SuperComponent } from './super/super.component';
 import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
 import { PrintComponent } from './print/print.component';
+import { ColorsService } from './colors.service';
 
 const R:Routes=[{path:'first',component:FirstComponent},
                 {path:'',component:FourthComponent},
@@ -37,16 +38,16 @@ const R:Routes=[{path:'first',component:FirstComponent},
     SuperComponent,
     ContactComponent,
     PostsComponent,
-    PrintComponent
+    PrintComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(R),
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
+  providers: [ColorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ColorsService } from './colors.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular'; 
   navbarCollapsed = true;  
+  // info:any;
+
+  // constructor(color :ColorsService){this.info=color.getData();}
+
 toggleNavbarCollapsing() {
     this.navbarCollapsed = !this.navbarCollapsed;
 }

@@ -23,15 +23,6 @@
     position: relative;
     width: 18%;
 }
-.feature .feature-box .iconset::after {
-    background: #008080 none repeat scroll 0 0;
-    content: "";
-    height: 150%;
-    left: 43%;
-    position: absolute;
-    top: 100%;
-    width: 1px;
-}
 
 .feature .feature-box .feature-content h4 {
     color: #0f0f0f;
@@ -71,7 +62,8 @@ span.fa.fa-gear {
 }
 
 .photo {
-    padding: 3%;
     padding-bottom: 8%;
     text-align: center;
 }
+.photo img{ max-width: 100%;}
+.feature-content {text-align: left;}

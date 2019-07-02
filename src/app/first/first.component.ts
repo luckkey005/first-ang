@@ -12,7 +12,7 @@ export class FirstComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('https://api.github.com/users').subscribe((res:{})=>{
-      this.users=res; document.getElementById('pretext').innerHTML="";
+      this.users=res; document.getElementById('pretext').innerHTML=" ";
     }  )
   }
 
