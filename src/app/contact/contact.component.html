@@ -25,7 +25,7 @@
           </div>
           <!-- contact form -->
           <div class="col-md-6">
-            <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <form #f="ngForm" (submit)="submiting(f)" novalidate>
               <div class="card rounded-0">
                   <div class="card-header p-0">
                       <div class="bg-light text-center py-2">
@@ -40,7 +40,21 @@
                               <div class="input-group-prepend">
                                   <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                               </div>
-                              <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required minlength="4" >
+                              <input type="text" class="form-control" 
+                              #name="ngModel" name="name" ngModel 
+                              placeholder="Enter Your Name" required 
+                              minlength="3" maxlength="10" pattern="[a-zA-Z]+">
+                          </div>
+                          <div class="alert alert-danger" *ngIf="!name.valid && name.touched">
+                            <div *ngIf="name.errors.required">
+                                Name is required.
+                              </div>
+                              <div *ngIf="name.errors.minlength">
+                                Name must be at least 3 characters long.
+                              </div>                              
+                              <div *ngIf="name.errors.pattern">
+                                Name must be characters.
+                              </div>                              
                           </div>
                       </div>
                       <div class="form-group">  
@@ -48,7 +62,18 @@
                               <div class="input-group-prepend">
                                   <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
                               </div>
-                              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Mail Id" required>
+                              <input type="email" class="form-control"
+                              #email="ngModel" ngModel name="email" 
+                              placeholder="Enter Mail Id" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                          </div>
+                          <div class="alert alert-danger" *ngIf="!email.valid && email.touched">
+                            <div *ngIf="email.errors.required">
+                                Mail is required.
+                              </div>
+                            <div *ngIf="email.errors.pattern">
+                                Enter Valid Mail id.
+                              </div>
+                                                           
                           </div>
                       </div>
 
@@ -57,17 +82,38 @@
                               <div class="input-group-prepend">
                                   <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                               </div>
-                              <textarea class="form-control" placeholder="Enter Your Comments" required name="comments"></textarea>
+                              <textarea class="form-control" placeholder="Enter Your Comments" required 
+                              #comments="ngModel" ngModel name="comments"></textarea>
                           </div>
+                          <div class="alert alert-danger" *ngIf="!comments.valid && comments.touched">
+                            <div *ngIf="comments.errors.required">
+                                Enter for Which purpose you want to contact.
+                            </div>
+                        </div>
                       </div>
 
                       <div class="text-center">
-                          <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
+                          <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2" [disabled]="!f.valid">
                       </div>
                   </div>
 
               </div>
           </form>
+          <div class="alert alert-success alert-dismissible" [style.visibility]="sub">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> I got your details, I'll contact you as soon as possible.
+          </div>
           </div>
       </div>
   </div>
+
+  <!-- <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-6 col-sm-6 p-5 pull-right" style="border-right:1px solid gray;">
+              some text goes here
+          </div>
+          <div class="col-md-6 col-sm-6 p-5" style="border-left: 1px solid gray;">
+              some text goes here
+          </div>
+      </div>
+  </div> -->

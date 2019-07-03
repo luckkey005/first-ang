@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Posts } from './posts';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 
 
 @Injectable({
@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 //   constructor(private http:HttpClient) {     
 // }
 // getData() { 
-//   // this.http.get('https://jsonplaceholder.typicode.com/todos/1').subscribe((res:{})=>{
+//   // this.http.get('').subscribe((res:{})=>{
 //    this.http.get('https://jsonplaceholder.typicode.com/todos/1')
 //   .map(Response=>{
 //     const post=Response.json();
@@ -22,12 +22,16 @@ import { Observable } from 'rxjs';
 //    }
 // }
 export class ColorsService {
-  data:any;
-  constructor() { 
-    
-  }
-  
+  data:any; b:any;
+  constructor(public http:HttpClient) { }   
 
+  fromNet(){
+    // this.http.get('https://api.github.com/users').subscribe(    (res:{})=>{this.b=res; } ); 
+    // const d= from(fetch('https://jsonplaceholder.typicode.com/todos/1'));
+    // d.subscribe({      next(Response){console.log(Response);}   });
+    this.http.get ('https://raw.githubusercontent.com/luckkey005/first-ang/master/package.json').subscribe(
+      res=>{this.b=res;console.log(this.b);}     ); 
+    }
 getData(){ 
   return this.data ={
     "name":"K Lakshmi Deepak",
@@ -44,9 +48,9 @@ getData(){
      {"title":"js","desc":90},
      {"title":"bootstrap","desc":85},
      {"title":"git","desc":70},
-    //  {"title":"jquery","desc":70},
      {"title":"php","desc":70},
      {"title":"mysql","desc":70},
+     {"title":"typescript","desc":70},
      {"title":"angular","desc":50}
     ],
 
