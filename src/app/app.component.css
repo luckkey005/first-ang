@@ -1,3 +1,78 @@
 li.nav-link.active {background-color:#008080;color:#fff;}
 .nav-link{color:#008080; padding-right: 1.5rem !important; padding-left: 1.5rem !important; cursor: pointer;}
 .navbar-nav{font-size: 18px;}
+
+
+/* copied from     tutorialzine.com */
+#myFooter {
+	background-color: #373a48;
+	color:white;
+}
+
+#myFooter .footer-copyright{
+	background-color: #383737;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+	font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+
+#myFooter .social-networks{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover{
+	text-decoration: none;
+}
+
+.social-networks .fa-facebook-official:hover{
+	color:#0077e2;
+}
+
+.social-networks .fa-google-plus:hover{
+	color:#ef1a1a;
+}
+
+.social-networks .fa-twitter:hover{
+	color: #00aced;
+}

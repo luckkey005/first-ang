@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,6 +17,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
 import { PrintComponent } from './print/print.component';
 import { ColorsService } from './colors.service';
+import { environment } from 'src/environments/environment';
+import { ListffComponent } from './listff/listff.component';
 
 const R:Routes=[{path:'first',component:FirstComponent},
                 {path:'',component:FourthComponent},
@@ -26,6 +29,7 @@ const R:Routes=[{path:'first',component:FirstComponent},
               {path:'contact',component:ContactComponent},
               {path:'posts',component:PostsComponent},
               {path:'print',component:PrintComponent},
+              {path:'list',component:ListffComponent},
             ];
 
 @NgModule({
@@ -38,7 +42,8 @@ const R:Routes=[{path:'first',component:FirstComponent},
     SuperComponent,
     ContactComponent,
     PostsComponent,
-    PrintComponent,    
+    PrintComponent,
+    ListffComponent,    
   ],
   imports: [
     BrowserModule,
@@ -46,6 +51,8 @@ const R:Routes=[{path:'first',component:FirstComponent},
     RouterModule.forRoot(R),
     HttpClientModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [ColorsService],
   bootstrap: [AppComponent]
