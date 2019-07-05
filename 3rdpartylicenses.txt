@@ -29,6 +29,11 @@ MIT
 @angular/core
 MIT
 
+@angular/fire
+MIT
+
+@angular/fire/database
+
 @angular/forms
 MIT
 
@@ -36,6 +41,21 @@ MIT
 MIT
 
 @angular/router
+MIT
+
+@firebase/app
+Apache-2.0
+
+@firebase/database
+Apache-2.0
+
+@firebase/logger
+Apache-2.0
+
+@firebase/util
+Apache-2.0
+
+angularfire2/database
 MIT
 
 core-js
@@ -60,6 +80,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+firebase/app
+
+firebase/database
 
 rxjs
 Apache-2.0
