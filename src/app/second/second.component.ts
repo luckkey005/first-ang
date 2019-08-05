@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ColorsService } from '../colors.service';
-import {HttpClient} from '@angular/common/http'
 
 @Component({
   selector: 'app-second',
@@ -8,10 +7,16 @@ import {HttpClient} from '@angular/common/http'
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
- a:any; 
-  constructor(private _Colorservice :ColorsService) {this.a=_Colorservice.getData(); console.log(_Colorservice.fromNet());}
+ a: any; b: any;
+  constructor(private _Colorservice: ColorsService) {
+    this._Colorservice.getData().subscribe( res => this.a=res[0]  );
+    // console.log(_Colorservice.fromNet());
+  }
 
-   ngOnInit() { 
+   ngOnInit() {
+    //  this._Colorservice.fromNet().subscribe(res=>{
+    //   this.b=res; console.log(this.b);
+    //  }) ;
   }
 
 }

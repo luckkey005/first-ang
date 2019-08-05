@@ -7,13 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
-  users:any;
-  constructor(private http:HttpClient) { }
+  users: any;
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('https://api.github.com/users').subscribe((res:{})=>{
-      this.users=res; document.getElementById('pretext').innerHTML=" ";
-    }  )
+    this.http.get('https://api.github.com/users').subscribe((res: {}) => {
+      this.users = res; document.getElementById('pretext').innerHTML = ' ';
+    }  );
   }
 
 }

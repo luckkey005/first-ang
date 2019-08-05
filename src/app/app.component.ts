@@ -7,8 +7,8 @@ import { ColorsService } from './colors.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular'; 
-  navbarCollapsed = true;  
+  title = 'Angular';
+  navbarCollapsed = true;
   // info:any;
 
   // constructor(color :ColorsService){this.info=color.getData();}
@@ -17,6 +17,6 @@ toggleNavbarCollapsing() {
     this.navbarCollapsed = !this.navbarCollapsed;
 }
 
-collapse(){  this.navbarCollapsed=true;  }
+collapse() {  this.navbarCollapsed = true;  }
 }
- 
+

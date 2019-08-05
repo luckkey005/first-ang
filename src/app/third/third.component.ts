@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./third.component.css']
 })
 export class ThirdComponent implements OnInit {
-  ls:string[] =['Hai','Namaste','Welcome','Adab','Sasrekal','Salam'];
-   cur=123.56987;
-  isSelected=true;
+  ls: string[] = ['Hai', 'Namaste', 'Welcome', 'Adab', 'Sasrekal', 'Salam'];
+   cur = 123.56987;
+  isSelected = true;
   constructor() { }
 
   ngOnInit() {

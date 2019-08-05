@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-light fixed-top">
+<nav class="navbar navbar-expand-md bg-light fixed-top d-print-none">
         <div class="navbar-brand">LOGO</div>
       
           <button class="navbar-toggler" (click)="toggleNavbarCollapsing()">
@@ -14,7 +14,7 @@
           <li class="nav-link" routerLink="contact" routerLinkActive="active" (click)="collapse()">Contact</li>
           <li class="nav-link" routerLink="first" routerLinkActive="active" (click)="collapse()">Users</li>
           <li class="nav-link" routerLink="print" routerLinkActive="active" (click)="collapse()">Print</li>
-          <li class="nav-link" routerLink="list" routerLinkActive="active" (click)="collapse()">list</li>
+          <!-- <li class="nav-link" routerLink="list" routerLinkActive="active" (click)="collapse()">list</li> -->
           <!-- <li
              class="nav-link" >Print</a>
           </li> -->
@@ -25,48 +25,34 @@
 <router-outlet></router-outlet>
 
 <footer id="myFooter">
-  <div class="container mt-5">
+  <div class="container mt-5 d-print-none">
       <div class="row">
-          <div class="col-sm-3 text-center">
+          <div class="col-sm-4 text-center">
               <h5>Get started</h5>
               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Sign up</a></li>
-                  <li><a href="#">Downloads</a></li>
+                  <li><a routerLink="print">Home</a></li>
+                  <li><a  routerLink="fourth">About</a></li>
               </ul>
           </div>
-          <div class="col-sm-3 text-center">
-              <h5>About us</h5>
+          <div class="col-sm-4 text-center">
+              <h5>About Me</h5>
               <ul>
-                  <li><a href="#">Company Information</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Reviews</a></li>
+                  
+          <!-- <li> <a routerLink="second">Skills</a></li> -->
+          <li> <a routerLink="super">Experience</a></li>
+          <li> <a routerLink="posts">Education</a></li>
               </ul>
           </div>
-          <div class="col-sm-3 text-center">
+          <div class="col-sm-4 text-center">
               <h5>Support</h5>
               <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Help desk</a></li>
-                  <li><a href="#">Forums</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3 text-center">
-              <h5>Legal</h5>
-              <ul>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Terms of Use</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <!-- <li><a routerLink="#">FAQ</a></li>    implement these 2 components also
+                  <li><a routerLink="#">How to Read</a></li> -->
               </ul>
           </div>
       </div>
   </div>
-  <div class="social-networks">
-      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
-      <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-  </div>
-  <div class="footer-copyright">
+  <div class="footer-copyright d-print-none">
       <p>&copy; 2019 Copyright Under ___ Licence created by <a href="https://www.facebook.com/deepak.lakshmi.39" target="_blank">K L Deepak</a> </p>
   </div>
 </footer>

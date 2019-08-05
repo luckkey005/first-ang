@@ -5,7 +5,7 @@ li.nav-link.active {background-color:#008080;color:#fff;}
 
 /* copied from     tutorialzine.com */
 #myFooter {
-	background-color: #373a48;
+	background-color: #004040;
 	color:white;
 }
 
@@ -50,29 +50,4 @@ li.nav-link.active {background-color:#008080;color:#fff;}
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 38px;
-}
-
-#myFooter .social-networks a{
-    font-size: 32px;
-    margin-right: 5px;
-    margin-left: 5px;
-    color: #f9f9f9;
-    padding: 10px;
-    transition: 0.2s;
-}
-
-#myFooter .social-networks a:hover{
-	text-decoration: none;
-}
-
-.social-networks .fa-facebook-official:hover{
-	color:#0077e2;
-}
-
-.social-networks .fa-google-plus:hover{
-	color:#ef1a1a;
-}
-
-.social-networks .fa-twitter:hover{
-	color: #00aced;
 }
