@@ -7,7 +7,7 @@
     {"title":"Time Punctual","desc":"Instead of Being Late I Choose to Plan the things and do accordingly , so that I can Manage the time in peaceful environment."},
     {"title":"Tech Enthusiast","desc":"Technology can change lot of things like shopping , health care etc. reading different blogs , magazines boosted my love towards it."}
     ],
-    
+
     "skills":[{"title":"html","desc":95},
      {"title":"css","desc":95},
      {"title":"js","desc":90},
@@ -41,6 +41,5 @@
       "social2":"https://www.youtube.com/deepaktips",
       "timing":"Mon to Sat: 09:30 AM - 09.30 PM"
     }
-    
-  }
-]
+
+  }]
