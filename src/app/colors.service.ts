@@ -60,7 +60,7 @@ getData() {
 //     },    };
 
 // return this.data;
-return this.http.get('https://raw.githubusercontent.com/luckkey005/first-ang/master/src/assets/kld.json');
+return this.http.get('./../assets/kld.json');
 }
 
 }
